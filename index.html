@@ -5,91 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Exemplo de form</title>
 </head>
 
 <body>
 
-    <form action="dados.html" method="get" enctype="multipart/form-data">
+    <nav class="navbar bgdark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AEB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notícias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Escola
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
 
-        <div>
-            <label for="nom" class="form-label">Nome:</label>
-            <input type="text" class="form-control" name="nome" id="nom" tabindex="0" maxlength="23">
-        </div>
+                </ul>
 
-        <div>
-            <label for="dtn">Data nasc:</label>
-            <input type="date" name="datanasc" id="dtn" min="2008-01-01" max="2025-08-22" value="2025-08-01">
+            </div>
         </div>
+    </nav>
 
-        <div>
-            <label for="alt">Altura:</label>
-            <input type="number" name="altura" id="alt" tabindex="2" step="0.01" min="0.8" max="3">
-        </div>
-
-        <div>
-            <label for="mail">Digite seu e-mail:</label>
-            <input type="email" id="mail" name="email" tabindex="3">
-        </div>
-
-        <div>
-            <label for="arqu">Pega os arquivos chara:</label>
-            <input type="file" id="arqui" name="arquivo" tabindex="4">
-        </div>
-        <div>
-            <label for="favcolor">Select your favorite color:</label>
-            <input type="color" id="favcolor" name="favcolor">
-        </div>
-        <div>
-            <fieldset>
-                <legend>Qual curso vai fazer:</legend>
-                <form>
-                    <input type="radio" id="html" name="fav_language" value="HTML" checked>
-                    <label for="html">HTML</label><br>
-                    <input type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">CSS</label><br>
-                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="javascript">JavaScript</label>
-                </form>
-            </fieldset>
-            <fieldset>
-                <legend>Qual seu meio de transporte:</legend>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> Bicicleta</label><br>
-                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                <label for="vehicle2"> Carro</label><br>
-                <input type="checkbox" id="vehicle3" name="vehicle3" value="bus">
-                <label for="vehicle3"> Ônibus</label>
-            </fieldset>
-        </div>
-        <div>
-            <label for="cars">Choose a car:</label>
-            <select id="cars" name="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
-        </div>
-        <div>
-            <label for="cars">Choose a car:</label>
-            <select id="cars" name="cars" size="4" multiple>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
-        </div>
-        <div>
-            <label for="msg">Descreva o que deseja:</label>
-            <textarea name="message" id="msg" style="width: 200px; height: 100px;"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Ok" tabindex="5">
-            <input type="reset" value="Desfazer" tabindex="6">
+    <header>
+        <div class="aebtitulo">
+            <h1>
+                Agência Espacial Brasileira
+            </h1>
         </div>
 
-    </form>
+    </header>
+    <footer>
+        <p>Redes Sociais:</p>
+    </footer>
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
 
