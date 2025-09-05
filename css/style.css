@@ -1,20 +1,16 @@
 body {
     box-sizing: border-box;
-   
     scroll-behavior: smooth;
-}
-
-.fundo1 {
-    color: white;
-    height: 100vh;
-    background-image: url('/img/galaxia.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-     background-attachment: fixed;
 }
 
 .navbar {
   /* Transição suave do scroll */
     transition: top 0.3s;
+}
+
+header{
+  background-color: beige;
+}
+footer{
+  background-color: red;
 }
