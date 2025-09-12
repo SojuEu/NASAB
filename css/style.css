@@ -1,15 +1,27 @@
 body {
     box-sizing: border-box;
     scroll-behavior: smooth;
+   
 }
 
 .navbar {
   /* Transição suave do scroll */
     transition: top 0.3s;
+    position: sticky;
 }
 
 header{
-  background-color: beige;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textojustificado{
+  font-size: 1.2rem;
+  text-align: justify;
 }
 footer{
   background-color: red;
