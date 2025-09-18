@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="img/logo-aeb-criada.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-do-site.png" type="image/x-icon">
     <title>AEB</title>
 </head>
 <style>
-    header{
+    .jujuba {
         background-image: url('img/fundomaneiro.webp');
         height: 70vh;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+        width: 100%;
     }
+
 </style>
+
 <body>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo-aeb-criada.png" alt="Logo AEB" width="50" height="auto">
+                <img src="img/logo-do-site.png" alt="Logo AEB" width="50" height="auto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,25 +33,29 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Notícias</a>
+                    <li class="nav-item verde-cor">
+                        <a class="nav-link " href="#">Notícias</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    
+                    <li class="nav-item dropdown amarelo-cor">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Escola
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Cursos</a></li>
+                            <li><a class="dropdown-item" href="#">Notícias</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Inscrições</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
                     </li>
 
                 </ul>
@@ -60,19 +66,27 @@
 
     <article>
 
-        <header>
-            <h1 class="p-3" style="font-size: 60px;">AGÊNCIA ESPACIAL BRASILEIRA</h1>
+        
+        <header class="p-4">
+            <div class="jujuba">
+              <h1 style="font-size: 12px;">AGÊNCIA ESPACIAL BRASILEIRA</h1>
+            </div>
+            <div class="side-text">
+               
+                <p class="textojustificado p-5">
+                    A Agência Espacial Brasileira (AEB), autarquia federal de natureza civil, vinculada ao Ministério da
+                    Ciência, Tecnologia e Inovação (MCTI), é a instituição responsável por formular, coordenar e
+                    executar a
+                    Política Espacial Brasileira.
+                </p>
+            </div>
+
         </header>
 
         <!-- inicio div central de texto -->
         <div class="container mt-5 mb-5 textojustificado">
 
-            <p>
-                A Agência Espacial Brasileira (AEB), autarquia federal de natureza civil, vinculada ao Ministério da
-                Ciência, Tecnologia e Inovação (MCTI), é a instituição responsável por formular, coordenar e
-                executar a
-                Política Espacial Brasileira.
-            </p>
+
             <p>
                 Desde a sua criação, pela Lei nº 8.854, de 10 de fevereiro de 1994, a Agência trabalha para
                 empreender
