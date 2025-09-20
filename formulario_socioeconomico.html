@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo-do-site.ico" type="image/x-icon">
+    <title>AEB</title>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-do-site.png" alt="Logo AEB" width="50" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+                    </li>
+                    <li class="nav-item verde-cor">
+                        <a class="nav-link " href="#">Notícias</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown amarelo-cor">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Escola
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cursos</a></li>
+                            <li><a class="dropdown-item" href="#">Notícias</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Inscrições</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="card shadow-lg rounded-4">
+                <div class="card-body p-4">
+                    <h3 class="card-title text-center mb-4">Questionário Socioeconômico AEB 2025</h3>
+
+                    <form>
+                        <div class="mb-4">
+                            <p>1- Quantas pessoas moram com você? (incluindo filhos, irmãos, parentes e amigos)<br>(Marque apenas uma resposta)</p>
+                            <input type="radio" id="1" name="quantas_moram" value="Moro sozinho">
+                            <label for="1">Moro sozinho</label><br>
+                            <input type="radio" id="2" name="quantas_moram" value="Uma a três">
+                            <label for="2">Uma a três</label><br>
+                            <input type="radio" id="3" name="quantas_moram" value="Quatro a sete">
+                            <label for="3">Quatro a sete</label><br>
+                            <input type="radio" id="4" name="quantas_moram" value="Oito a dez">
+                            <label for="4">Oito a dez</label><br>
+                            <input type="radio" id="5" name="quantas_moram" value="Mais de dez">
+                            <label for="5">Mais de dez</label>
+                        </div>
+        
+                        <div class="mb-4">
+                            <p>2- A casa onde você mora é? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="6" name="onde_mora" value="Própria">
+                            <label for="6">Própria</label><br>
+                            <input type="radio" id="7" name="onde_mora" value="Alugada">
+                            <label for="7">Alugada</label><br>
+                            <input type="radio" id="8" name="onde_mora" value="Cedida">
+                            <label for="8">Cedida</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>3- Sua casa está localizada em? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="9" name="localidade_casa" value="Zona rural">
+                            <label for="9">Zona rural</label><br>
+                            <input type="radio" id="10" name="localidade_casa" value="Zona urbana">
+                            <label for="10">Zona urbana</label><br>
+                            <input type="radio" id="11" name="localidade_casa" value="Comunidade indígena">
+                            <label for="11">Comunidade indígena</label><br>
+                            <input type="radio" id="12" name="localidade_casa" value="Comunidade quilombola">
+                            <label for="12">Comunidade quilombola</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>4- Qual é o nível de escolaridade do seu pai? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="13" name="escolaridade_pai" value="Da 1ª à 4ª série do Ensino Fundamental">
+                            <label for="13">Da 1ª à 4ª série do Ensino Fundamental</label><br>
+                            <input type="radio" id="14" name="escolaridade_pai" value="Da 5ª à 8ª série do Ensino Fundamental">
+                            <label for="14">Da 5ª à 8ª série do Ensino Fundamental</label><br>
+                            <input type="radio" id="15" name="escolaridade_pai" value="Ensino Médio">
+                            <label for="15">Ensino Médio</label><br>
+                            <input type="radio" id="16" name="escolaridade_pai" value="Ensino Superior">
+                            <label for="16">Ensino Superior</label><br>
+                            <input type="radio" id="17" name="escolaridade_pai" value="Especialização">
+                            <label for="17">Especialização</label><br>
+                            <input type="radio" id="18" name="escolaridade_pai" value="Não estudou">
+                            <label for="18">Não estudou</label><br>
+                            <input type="radio" id="19" name="escolaridade_pai" value="Não sei">
+                            <label for="19">Não sei</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>5- Qual é o nível de escolaridade da sua mãe? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="20" name="escolaridade_mae" value="Da 1ª à 4ª série do Ensino Fundamental">
+                            <label for="20">Da 1ª à 4ª série do Ensino Fundamental</label><br>
+                            <input type="radio" id="21" name="escolaridade_mae" value="Da 5ª à 8ª série do Ensino Fundamental">
+                            <label for="21">Da 5ª à 8ª série do Ensino Fundamental</label><br>
+                            <input type="radio" id="22" name="escolaridade_mae" value="Ensino Médio">
+                            <label for="22">Ensino Médio</label><br>
+                            <input type="radio" id="23" name="escolaridade_mae" value="Ensino Superior">
+                            <label for="23">Ensino Superior</label><br>
+                            <input type="radio" id="24" name="escolaridade_mae" value="Especialização">
+                            <label for="24">Especialização</label><br>
+                            <input type="radio" id="25" name="escolaridade_mae" value="Não estudou">
+                            <label for="25">Não estudou</label><br>
+                            <input type="radio" id="26" name="escolaridade_mae" value="Não sei">
+                            <label for="26">Não sei</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>6- Somando a sua renda com a renda das pessoas que moram com você, quanto é, aproximadamente, a renda familiar mensal?<br>(Marque apenas uma resposta)</p>
+                            <input type="radio" id="27" name="renda_familiar" value="Nenhuma renda">
+                            <label for="27">Nenhuma renda</label><br>
+                            <input type="radio" id="28" name="renda_familiar" value="Até 1 salário mínimo">
+                            <label for="28">Até 1 salário mínimo (até R$ 1.518,00)</label><br>
+                            <input type="radio" id="29" name="renda_familiar" value="De 1 a 3 salários mínimos">
+                            <label for="29">De 1 a 3 salários mínimos (de R$ 1.518,01 até R$ 4.554,00)</label><br>
+                            <input type="radio" id="30" name="renda_familiar" value="Ensino Superior">
+                            <label for="30">De 3 a 6 salários mínimos (de R$ 4.554,01 até R$ 9.108,00)</label><br>
+                            <input type="radio" id="31" name="renda_familiar" value="De 6 a 9 salários mínimos">
+                            <label for="31">De 6 a 9 salários mínimos (de R$ 9.108,01 até R$ 13.662,00)</label><br>
+                            <input type="radio" id="32" name="renda_familiar" value="De 9 a 12 salários mínimos">
+                            <label for="32">De 9 a 12 salários mínimos (de R$ 13.662,01 até R$ 18.216,00)</label><br>
+                            <input type="radio" id="33" name="renda_familiar" value="De 12 a 15 salários mínimos">
+                            <label for="33">De 12 a 15 salários mínimos (de R$ 18.216,01 até R$ 22.770,00)</label><br>
+                            <input type="radio" id="34" name="renda_familiar" value="De 9 a 12 salários mínimos">
+                            <label for="34">Mais de 15 salários mínimos (mais de R$ 22.770,01).</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>7- Qual a sua renda mensal, aproximadamente? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="35" name="renda_mensal" value="Nenhuma renda">
+                            <label for="35">Nenhuma renda</label><br>
+                            <input type="radio" id="36" name="renda_mensal" value="Até 1 salário mínimo">
+                            <label for="36">Até 1 salário mínimo (até R$ 1.518,00)</label><br>
+                            <input type="radio" id="37" name="renda_mensal" value="De 1 a 3 salários mínimos">
+                            <label for="37">De 1 a 3 salários mínimos (de R$ 1.518,01 até R$ 4.554,00)</label><br>
+                            <input type="radio" id="38" name="renda_mensal" value="Ensino Superior">
+                            <label for="38">De 3 a 6 salários mínimos (de R$ 4.554,01 até R$ 9.108,00)</label><br>
+                            <input type="radio" id="39" name="renda_mensal" value="De 6 a 9 salários mínimos">
+                            <label for="39">De 6 a 9 salários mínimos (de R$ 9.108,01 até R$ 13.662,00)</label><br>
+                            <input type="radio" id="40" name="renda_mensal" value="De 9 a 12 salários mínimos">
+                            <label for="40">De 9 a 12 salários mínimos (de R$ 13.662,01 até R$ 18.216,00)</label><br>
+                            <input type="radio" id="41" name="renda_mensal" value="De 12 a 15 salários mínimos">
+                            <label for="41">De 12 a 15 salários mínimos (de R$ 18.216,01 até R$ 22.770,00)</label><br>
+                            <input type="radio" id="42" name="renda_mensal" value="De 9 a 12 salários mínimos">
+                            <label for="42">Mais de 15 salários mínimos (mais de R$ 22.770,01).</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>8- Você trabalha ou já trabalhou? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="43" name="ja_trabalhou" value="Sim">
+                            <label for="43">Sim</label><br>
+                            <input type="radio" id="44" name="ja_trabalhou" value="Não">
+                            <label for="44">Não (Passe para a pergunta 14)</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>9- Em que você trabalha atualmente? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="45" name="trabalho_atual" value="Na agricultura, no campo, na fazenda ou na pesca">
+                            <label for="45">Na agricultura, no campo, na fazenda ou na pesca</label><br>
+                            <input type="radio" id="46" name="trabalho_atual" value="Na indústria">
+                            <label for="46">Na indústria</label><br>
+                            <input type="radio" id="47" name="trabalho_atual" value="Na construção civil">
+                            <label for="47">Na construção civil</label><br>
+                            <input type="radio" id="48" name="trabalho_atual" value="No comércio, banco, transporte, hotelaria ou outros serviços">
+                            <label for="48">No comércio, banco, transporte, hotelaria ou outros serviços</label><br>
+                            <input type="radio" id="49" name="trabalho_atual" value="Como funcionário(a) do governo federal, estadual ou municipal">
+                            <label for="49">Como funcionário(a) do governo federal, estadual ou municipal</label><br>
+                            <input type="radio" id="50" name="trabalho_atual" value="Como profissional liberal, professora ou técnica de nível superior">
+                            <label for="50">Como profissional liberal, professora ou técnica de nível superior</label><br>
+                            <input type="radio" id="51" name="trabalho_atual" value="Trabalho fora de casa em atividades informais">
+                            <label for="51">Trabalho fora de casa em atividades informais (pintor, eletricista, encanador, feirante, ambulante, guardador/a de carros, catador/a de lixo)</label><br>
+                            <input type="radio" id="52" name="trabalho_atual" value="Trabalho em minha casa informalmente">
+                            <label for="52">Trabalho em minha casa informalmente (costura, aulas particulares, cozinha, artesanato, carpintaria etc.)</label><br>
+                            <input type="radio" id="53" name="trabalho_atual" value="Faço trabalho doméstico em casa de outras pessoas">
+                            <label for="53">Faço trabalho doméstico em casa de outras pessoas (cozinheiro/a, mordomo/governanta, jardineiro, babá, lavadeira, faxineiro/a, etc.)</label><br>
+                            <input type="radio" id="54" name="trabalho_atual" value="No lar">
+                            <label for="54">No lar (sem remuneração)</label><br>
+                            <input type="radio" id="55" name="trabalho_atual" value="Outro">
+                            <label for="55">Outro</label><br>
+                            <input type="radio" id="56" name="trabalho_atual" value="Não trabalho">
+                            <label for="56">Não trabalho</label>
+                        </div>
+
+                        <p>10- Indique o grau de importância de cada um dos motivos abaixo na sua decisão de trabalhar:<br>(Atenção: 0 indica nenhuma importância e 5 maior importância.)</p>
+                        <div class="mb-2">
+                            <label>Ajudar nas despesas com a casa:</label>
+                            <div class="d-flex gap-3">
+                                <div><input type="radio" name="despesas" value="0" required> 0</div>
+                                <div><input type="radio" name="despesas" value="1"> 1</div>
+                                <div><input type="radio" name="despesas" value="2"> 2</div>
+                                <div><input type="radio" name="despesas" value="3"> 3</div>
+                                <div><input type="radio" name="despesas" value="4"> 4</div>
+                                <div><input type="radio" name="despesas" value="5"> 5</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label d-block">Sustentar minha família (esposo/a, filhos/as
+                                etc.):</label>
+                            <div class="d-flex gap-3">
+                                <div><input type="radio" name="familia" value="0" required> 0</div>
+                                <div><input type="radio" name="familia" value="1"> 1</div>
+                                <div><input type="radio" name="familia" value="2"> 2</div>
+                                <div><input type="radio" name="familia" value="3"> 3</div>
+                                <div><input type="radio" name="familia" value="4"> 4</div>
+                                <div><input type="radio" name="familia" value="5"> 5</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label d-block">Ser independente (ganhar meu próprio dinheiro):</label>
+                            <div class="d-flex gap-3">
+                                <div><input type="radio" name="independente" value="0" required> 0</div>
+                                <div><input type="radio" name="independente" value="1"> 1</div>
+                                <div><input type="radio" name="independente" value="2"> 2</div>
+                                <div><input type="radio" name="independente" value="3"> 3</div>
+                                <div><input type="radio" name="independente" value="4"> 4</div>
+                                <div><input type="radio" name="independente" value="5"> 5</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label d-block">Adquirir experiência:</label>
+                            <div class="d-flex gap-3">
+                                <div><input type="radio" name="experiencia" value="0" required> 0</div>
+                                <div><input type="radio" name="experiencia" value="1"> 1</div>
+                                <div><input type="radio" name="experiencia" value="2"> 2</div>
+                                <div><input type="radio" name="experiencia" value="3"> 3</div>
+                                <div><input type="radio" name="experiencia" value="4"> 4</div>
+                                <div><input type="radio" name="experiencia" value="5"> 5</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label d-block">Custear/pagar meus estudos:</label>
+                            <div class="d-flex gap-3">
+                                <div><input type="radio" name="estudos" value="0" required> 0</div>
+                                <div><input type="radio" name="estudos" value="1"> 1</div>
+                                <div><input type="radio" name="estudos" value="2"> 2</div>
+                                <div><input type="radio" name="estudos" value="3"> 3</div>
+                                <div><input type="radio" name="estudos" value="4"> 4</div>
+                                <div><input type="radio" name="estudos" value="5"> 5</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>11- Quantas horas semanais você trabalha? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="57" name="horas_semanais" value="Sem jornada fixa, até 10 horas semanais">
+                            <label for="57">Sem jornada fixa, até 10 horas semanais</label><br>
+                            <input type="radio" id="58" name="horas_semanais" value="De 11 a 20 horas semanais">
+                            <label for="58">De 11 a 20 horas semanais</label><br>
+                            <input type="radio" id="59" name="horas_semanais" value="De 21 a 30 horas semanais">
+                            <label for="59">De 21 a 30 horas semanais</label><br>
+                            <input type="radio" id="60" name="horas_semanais" value="De 31 a 40 horas semanais">
+                            <label for="60">De 31 a 40 horas semanais</label><br>
+                            <input type="radio" id="61" name="horas_semanais" value="Mais de 40 horas semanais">
+                            <label for="61">Mais de 40 horas semanais</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>12- Com que idade você começou a trabalhar? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="62" name="idade_trabalho" value="Antes dos 14 anos">
+                            <label for="62">Antes dos 14 anos</label><br>
+                            <input type="radio" id="63" name="idade_trabalho" value="Entre 14 e 16 anos">
+                            <label for="63">Entre 14 e 16 anos</label><br>
+                            <input type="radio" id="64" name="idade_trabalho" value="Entre 17 e 18 anos">
+                            <label for="64">Entre 17 e 18 anos</label><br>
+                            <input type="radio" id="65" name="idade_trabalho" value="Após 18 anos">
+                            <label for="65">Após 18 anos</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>13- Como você avalia ter estudado e trabalhado durante seus estudos? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="66" name="avaliacao_estudo" value="Atrapalhou meus estudos">
+                            <label for="66">Atrapalhou meus estudos</label><br>
+                            <input type="radio" id="67" name="avaliacao_estudo" value="Possibilitou meus estudos">
+                            <label for="67">Possibilitou meus estudos</label><br>
+                            <input type="radio" id="68" name="avaliacao_estudo" value="Possibilitou meu crescimento pessoal">
+                            <label for="68">Possibilitou meu crescimento pessoal</label><br>
+                            <input type="radio" id="69" name="avaliacao_estudo" value="Não atrapalhou meus estudos">
+                            <label for="69">Não atrapalhou meus estudos</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>14- Você já reprovou alguma vez? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="70" name="reprovacao" value="Não, nunca">
+                            <label for="70">Não, nunca</label><br>
+                            <input type="radio" id="71" name="reprovacao" value="Sim, uma vez">
+                            <label for="71">Sim, uma vez</label><br>
+                            <input type="radio" id="72" name="reprovacao" value="Sim, duas vezes">
+                            <label for="72">Sim, duas vezes</label><br>
+                            <input type="radio" id="73" name="reprovacao" value="Sim, três vezes ou mais">
+                            <label for="73">Sim, três vezes ou mais</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>15- Qual principal motivo faria você voltar a estudar ou continuar estudando? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="74" name="motivo_estudar" value="Conseguir um emprego">
+                            <label for="74">Conseguir um emprego</label><br>
+                            <input type="radio" id="75" name="motivo_estudar" value="Progredir no emprego atual">
+                            <label for="75">Progredir no emprego atual</label><br>
+                            <input type="radio" id="76" name="motivo_estudar" value="Conseguir um emprego melhor">
+                            <label for="76">Conseguir um emprego melhor</label><br>
+                            <input type="radio" id="77" name="motivo_estudar" value="Adquirir mais conhecimento, ficar atualizado">
+                            <label for="77">Adquirir mais conhecimento, ficar atualizado</label><br>
+                            <input type="radio" id="78" name="motivo_estudar" value="Atender à expectativa da família">
+                            <label for="78">Atender à expectativa de meus familiares sobre meus estudos</label><br>
+                            <input type="radio" id="79" name="motivo_estudar" value="Não pretendo voltar a estudar">
+                            <label for="79">Não pretendo voltar a estudar</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>16- Se você já frequentou a escola regular, em que série você deixou de estudar? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="80" name="serie_parou" value="Não frequentei">
+                            <label for="80">Não frequentei</label><br>
+                            <input type="radio" id="81" name="serie_parou" value="1ª série EF">
+                            <label for="81">1ª série do ensino fundamental</label><br>
+                            <input type="radio" id="82" name="serie_parou" value="2ª série EF">
+                            <label for="82">2ª série do ensino fundamental</label><br>
+                            <input type="radio" id="83" name="serie_parou" value="3ª série EF">
+                            <label for="83">3ª série do ensino fundamental</label><br>
+                            <input type="radio" id="84" name="serie_parou" value="4ª série EF">
+                            <label for="84">4ª série do ensino fundamental</label><br>
+                            <input type="radio" id="85" name="serie_parou" value="5ª série EF">
+                            <label for="85">5ª série do ensino fundamental</label><br>
+                            <input type="radio" id="86" name="serie_parou" value="6ª série EF">
+                            <label for="86">6ª série do ensino fundamental</label><br>
+                            <input type="radio" id="87" name="serie_parou" value="7ª série EF">
+                            <label for="87">7ª série do ensino fundamental</label><br>
+                            <input type="radio" id="88" name="serie_parou" value="8ª série EF">
+                            <label for="88">8ª série do ensino fundamental</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <p>17- Se você deixou de frequentar a escola regular, quantos anos você tinha? (Marque apenas uma resposta)</p>
+                            <input type="radio" id="89" name="idade_deixar_escola" value="Nunca frequentei a escola">
+                            <label for="89">Nunca frequentei a escola</label><br>
+                            <input type="radio" id="90" name="idade_deixar_escola" value="Estou frequentando a escola">
+                            <label for="90">Estou frequentando a escola</label><br>
+                            <input type="radio" id="91" name="idade_deixar_escola" value="Menos de 10 anos">
+                            <label for="91">Menos de 10 anos</label><br>
+                            <input type="radio" id="92" name="idade_deixar_escola" value="Entre 10 e 14 anos">
+                            <label for="92">Entre 10 e 14 anos</label><br>
+                            <input type="radio" id="93" name="idade_deixar_escola" value="Entre 15 e 18 anos">
+                            <label for="93">Entre 15 e 18 anos</label><br>
+                            <input type="radio" id="94" name="idade_deixar_escola" value="Entre 19 e 24 anos">
+                            <label for="94">Entre 19 e 24 anos</label><br>
+                            <input type="radio" id="95" name="idade_deixar_escola" value="Entre 25 e 30 anos">
+                            <label for="95">Entre 25 e 30 anos</label><br>
+                            <input type="radio" id="96" name="idade_deixar_escola" value="Mais de 30 anos">
+                            <label for="96">Mais de 30 anos</label>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <p>18- Indique o grau de importância dos motivos que levaram você a participar do ENCCEJA:<br>(Atenção: 0 indica o fator menos relevante e 5 o fator mais relevante.)</p>
+                            <div class="mb-2">
+                                <label>Para conseguir o certificado de conclusão do Ensino Fundamental:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_certificado" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_certificado" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_certificado" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_certificado" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_certificado" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_certificado" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label>Porque parentes, amigos(as) e professores(as) me recomendaram:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_recomendacao" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_recomendacao" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_recomendacao" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_recomendacao" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_recomendacao" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_recomendacao" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label>Para continuar meus estudos:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_continuar" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_continuar" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_continuar" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_continuar" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_continuar" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_continuar" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label>Porque não posso estudar:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_nao_pode" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_nao_pode" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_nao_pode" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_nao_pode" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_nao_pode" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_nao_pode" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label>Porque não quero ou não gosto de estudar:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_nao_gosta" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_nao_gosta" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_nao_gosta" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_nao_gosta" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_nao_gosta" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_nao_gosta" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                            <label>É a melhor maneira para conciliar meus estudos e trabalho:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_conciliar" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_conciliar" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_conciliar" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_conciliar" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_conciliar" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_conciliar" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label>Para conseguir um emprego:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_emprego" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_emprego" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_emprego" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_emprego" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_emprego" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_emprego" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label>Para fazer curso profissionalizante e me preparar para o trabalho:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_curso" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_curso" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_curso" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_curso" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_curso" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_curso" value="5"> 5</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label>Para progredir no emprego atual:</label>
+                                <div class="d-flex gap-3">
+                                    <div><input type="radio" name="encceja_progredir" value="0" required> 0</div>
+                                    <div><input type="radio" name="encceja_progredir" value="1"> 1</div>
+                                    <div><input type="radio" name="encceja_progredir" value="2"> 2</div>
+                                    <div><input type="radio" name="encceja_progredir" value="3"> 3</div>
+                                    <div><input type="radio" name="encceja_progredir" value="4"> 4</div>
+                                    <div><input type="radio" name="encceja_progredir" value="5"> 5</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                        <p>19- Você cursa ou já cursou a Educação de Jovens e Adultos – EJA? (Marque apenas uma resposta)</p>
+                        <input type="radio" id="106" name="eja" value="Sim">
+                        <label for="106">Sim</label><br>
+                        <input type="radio" id="107" name="eja" value="Não">
+                        <label for="107">Não</label>
+                        </div>
+
+                        <div class="mb-4">
+                        <p>20- Como é ou era o curso de EJA que você frequenta ou frequentou? (Marque apenas uma resposta)</p>
+                        <input type="radio" id="108" name="tipo_eja" value="Curso presencial em escola pública">
+                        <label for="108">Curso presencial em escola pública</label><br>
+                        <input type="radio" id="109" name="tipo_eja" value="Curso presencial em escola privada">
+                        <label for="109">Curso presencial em escola privada</label><br>
+                        <input type="radio" id="110" name="tipo_eja" value="Curso presencial na empresa, instituição filantrópica ou religiosa">
+                        <label for="110">Curso presencial na empresa em que trabalha, instituição filantrópica ou religiosa</label><br>
+                        <input type="radio" id="111" name="tipo_eja" value="Curso a distância">
+                        <label for="111">Curso a distância (rádio, TV, internet, correio, apostilas)</label><br>
+                        <input type="radio" id="112" name="tipo_eja" value="Curso semi-presencial em escola pública">
+                        <label for="112">Curso semi-presencial em escola pública</label><br>
+                        <input type="radio" id="113" name="tipo_eja" value="Curso semi-presencial em escola privada">
+                        <label for="113">Curso semi-presencial em escola privada</label>
+                        </div>
+
+                            <div class="mb-4">
+                            <p>21- Caso tenha deixado de cursar a EJA, indique o(s) motivo(s):</p>
+                            <label>Trabalho / falta de tempo para estudar</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="114" name="motivo_tempo" value="Sim"><label for="114">Sim</label>
+                                <input type="radio" id="115" name="motivo_tempo" value="Não"><label for="115">Não</label><br>
+                            </div>
+                            <label>Estudava no curso da empresa e foi interrompido</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="116" name="motivo_empresa" value="Sim"><label for="116">Sim</label>
+                                <input type="radio" id="117" name="motivo_empresa" value="Não"><label for="117">Não</label><br>
+                            </div>
+                            <label>Problemas de saúde ou acidentes comigo ou familiares</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="118" name="motivo_saude" value="Sim"><label for="118">Sim</label>
+                                <input type="radio" id="119" name="motivo_saude" value="Não"><label for="119">Não</label><br>
+                            </div>
+                            <label>Mudança de estado, município ou cidade</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="120" name="motivo_mudanca" value="Sim"><label for="120">Sim</label>
+                                <input type="radio" id="121" name="motivo_mudanca" value="Não"><label for="121">Não</label><br>
+                            </div>
+                            <label>Motivos pessoais: casamento / filhos</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="122" name="motivo_pessoal" value="Sim"><label for="122">Sim</label>
+                                <input type="radio" id="123" name="motivo_pessoal" value="Não"><label for="123">Não</label><br>
+                            </div>
+                            <label>Não tinha interesse / desisti</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="124" name="motivo_interesse" value="Sim"><label for="124">Sim</label>
+                                <input type="radio" id="125" name="motivo_interesse" value="Não"><label for="125">Não</label><br>
+                            </div>
+                            <label>Senti-me discriminado(a) / Sofri agressão</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="126" name="motivo_discriminacao" value="Sim"><label for="126">Sim</label>
+                                <input type="radio" id="127" name="motivo_discriminacao" value="Não"><label for="127">Não</label><br>
+                            </div>
+                            <label>Não se aplica</label><br>
+                            <div class="d-flex gap-2">
+                                <input type="radio" id="128" name="motivo_nao_aplica" value="Sim"><label for="128">Sim</label>
+                                <input type="radio" id="129" name="motivo_nao_aplica" value="Não"><label for="129">Não</label>
+                            </div>
+                        </div>
+                    <div class="mb-4">
+                        <p>22- Em que medida os motivos a seguir influenciaram no fato de você não ter frequentado ou ter abandonado a escola regular:<br>(Atenção: 0 significa que não influenciou e 5 influenciou muito.)</p>
+                        <div class="mb-2">
+                        <label>Inexistência de vaga em escola pública:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="vaga" value="0" required> 0</div>
+                            <div><input type="radio" name="vaga" value="1"> 1</div>
+                            <div><input type="radio" name="vaga" value="2"> 2</div>
+                            <div><input type="radio" name="vaga" value="3"> 3</div>
+                            <div><input type="radio" name="vaga" value="4"> 4</div>
+                            <div><input type="radio" name="vaga" value="5"> 5</div>
+                        </div>
+                        </div>
+
+                        <div class="mb-2">
+                        <label>Ausência de escola perto de casa:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="distancia" value="0" required> 0</div>
+                            <div><input type="radio" name="distancia" value="1"> 1</div>
+                            <div><input type="radio" name="distancia" value="2"> 2</div>
+                            <div><input type="radio" name="distancia" value="3"> 3</div>
+                            <div><input type="radio" name="distancia" value="4"> 4</div>
+                            <div><input type="radio" name="distancia" value="5"> 5</div>
+                        </div>
+                        </div>
+
+                        <div class="mb-2">
+                        <label>Falta de interesse em estudar:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="interesse" value="0" required> 0</div>
+                            <div><input type="radio" name="interesse" value="1"> 1</div>
+                            <div><input type="radio" name="interesse" value="2"> 2</div>
+                            <div><input type="radio" name="interesse" value="3"> 3</div>
+                            <div><input type="radio" name="interesse" value="4"> 4</div>
+                            <div><input type="radio" name="interesse" value="5"> 5</div>
+                        </div>
+                        </div>
+
+                        <div class="mb-2">
+                        <label>Trabalho: falta de tempo para estudar:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="trabalho" value="0" required> 0</div>
+                            <div><input type="radio" name="trabalho" value="1"> 1</div>
+                            <div><input type="radio" name="trabalho" value="2"> 2</div>
+                            <div><input type="radio" name="trabalho" value="3"> 3</div>
+                            <div><input type="radio" name="trabalho" value="4"> 4</div>
+                            <div><input type="radio" name="trabalho" value="5"> 5</div>
+                        </div>
+                        </div>
+
+                        <div class="mb-2">
+                        <label>Motivos pessoais: casamento / filhos:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="pessoais" value="0" required> 0</div>
+                            <div><input type="radio" name="pessoais" value="1"> 1</div>
+                            <div><input type="radio" name="pessoais" value="2"> 2</div>
+                            <div><input type="radio" name="pessoais" value="3"> 3</div>
+                            <div><input type="radio" name="pessoais" value="4"> 4</div>
+                            <div><input type="radio" name="pessoais" value="5"> 5</div>
+                        </div>
+                        </div>
+
+                        <div class="mb-2">
+                        <label>Falta de apoio familiar:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="apoio" value="0" required> 0</div>
+                            <div><input type="radio" name="apoio" value="1"> 1</div>
+                            <div><input type="radio" name="apoio" value="2"> 2</div>
+                            <div><input type="radio" name="apoio" value="3"> 3</div>
+                            <div><input type="radio" name="apoio" value="4"> 4</div>
+                            <div><input type="radio" name="apoio" value="5"> 5</div>
+                        </div>
+                        </div>
+
+                        <div class="mb-2">
+                        <label>Problemas de saúde ou acidente comigo ou familiares:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="saude" value="0" required> 0</div>
+                            <div><input type="radio" name="saude" value="1"> 1</div>
+                            <div><input type="radio" name="saude" value="2"> 2</div>
+                            <div><input type="radio" name="saude" value="3"> 3</div>
+                            <div><input type="radio" name="saude" value="4"> 4</div>
+                            <div><input type="radio" name="saude" value="5"> 5</div>
+                        </div>
+                        </div>
+
+                        <div class="mb-2">
+                        <label>Discriminação / preconceitos de raça, sexo, cor, idade ou socioeconômico:</label>
+                        <div class="d-flex gap-3">
+                            <div><input type="radio" name="discriminacao" value="0" required> 0</div>
+                            <div><input type="radio" name="discriminacao" value="1"> 1</div>
+                            <div><input type="radio" name="discriminacao" value="2"> 2</div>
+                            <div><input type="radio" name="discriminacao" value="3"> 3</div>
+                            <div><input type="radio" name="discriminacao" value="4"> 4</div>
+                            <div><input type="radio" name="discriminacao" value="5"> 5</div>
+                        </div>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Redes Sociais:</p>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
