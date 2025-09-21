@@ -10,14 +10,14 @@
     <title>AEB</title>
 </head>
 <style>
-    .jujuba {
-        background-image: url('img/fundomaneiro.webp');
+    header {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+            url('img/fundomaneiro.webp');
         height: 70vh;
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
     }
-
 </style>
 
 <body>
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo-do-site.png" alt="Logo AEB" width="50" height="auto">
+                <img src="img/logo-do-site.png" alt="Logo AEB" width="40" height="auto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
                     <li class="nav-item verde-cor">
                         <a class="nav-link " href="#">Notícias</a>
                     </li>
-                    
+
                     <li class="nav-item dropdown amarelo-cor">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -64,48 +64,79 @@
         </div>
     </nav>
 
-    <article>
-
-        
-        <header class="p-4">
-            <div class="jujuba">
-              <h1 style="font-size: 12px;">AGÊNCIA ESPACIAL BRASILEIRA</h1>
-            </div>
-            <div class="side-text">
-               
-                <p class="textojustificado p-5">
-                    A Agência Espacial Brasileira (AEB), autarquia federal de natureza civil, vinculada ao Ministério da
-                    Ciência, Tecnologia e Inovação (MCTI), é a instituição responsável por formular, coordenar e
-                    executar a
-                    Política Espacial Brasileira.
-                </p>
-            </div>
-
-        </header>
-
-        <!-- inicio div central de texto -->
-        <div class="container mt-5 mb-5 textojustificado">
 
 
-            <p>
-                Desde a sua criação, pela Lei nº 8.854, de 10 de fevereiro de 1994, a Agência trabalha para
-                empreender
-                os esforços do governo brasileiro na promoção da autonomia do setor espacial, com a finalidade de
-                promover o desenvolvimento das atividades espaciais de interesse nacional.
-            </p>
-            <p>
-                As atividades da AEB são orientadas pelas diretrizes estabelecidas na Política Nacional de
-                Desenvolvimento das Atividades Espaciais (PNDAE), aprovada pelo Decreto nº 1.332, de 8 de dezembro
-                de 1994, que estabelece objetivos e diretrizes para os programas e projetos nacionais relativos à
-                área espacial e têm o Programa Nacional de Atividades Espaciais (PNAE) como principal instrumento de
-                planejamento do setor espacial.
-            </p>
+    <header class="p-4">
+
+        <h1 style="font-size: 50px;">AGÊNCIA ESPACIAL BRASILEIRA</h1>
+        <p class="textojustificado">
+            A Agência Espacial Brasileira (AEB), autarquia federal de natureza civil, vinculada ao Ministério da
+            Ciência, Tecnologia e Inovação (MCTI), é a instituição responsável por formular, coordenar e
+            executar a
+            Política Espacial Brasileira.
+        </p>
         </div>
-        <!-- fim div central de texto -->
 
+    </header>
 
+    <article>
+        <div class="card-group">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
     </article>
 
+    <!-- inicio div central de texto -->
+    <div class="container mt-5 mb-5 textojustificado">
+
+
+        <p>
+            Desde a sua criação, pela Lei nº 8.854, de 10 de fevereiro de 1994, a Agência trabalha para
+            empreender
+            os esforços do governo brasileiro na promoção da autonomia do setor espacial, com a finalidade de
+            promover o desenvolvimento das atividades espaciais de interesse nacional.
+        </p>
+        <p>
+            As atividades da AEB são orientadas pelas diretrizes estabelecidas na Política Nacional de
+            Desenvolvimento das Atividades Espaciais (PNDAE), aprovada pelo Decreto nº 1.332, de 8 de dezembro
+            de 1994, que estabelece objetivos e diretrizes para os programas e projetos nacionais relativos à
+            área espacial e têm o Programa Nacional de Atividades Espaciais (PNAE) como principal instrumento de
+            planejamento do setor espacial.
+        </p>
+    </div>
+    <!-- fim div central de texto -->
 
 
     </header>
@@ -114,9 +145,9 @@
     </footer>
 
     <!-- Java scrip links -->
-    <script src="./js/script.js"></script>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
- 
+
 
 </html>
