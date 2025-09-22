@@ -9,12 +9,13 @@
   <link rel="shortcut icon" href="img/logo-do-site.ico" type="image/x-icon">
   <title>AEB</title>
 </head>
-
 <style>
   body {
     font-family: Arial, sans-serif;
     background-image: url(img/fundo-login.png);
   }
+
+  
 
   footer{
         background-image: url('img/footer.png');
@@ -42,6 +43,7 @@
                     <li class="nav-item verde-cor">
                         <a class="nav-link " href="noticias.html">Notícias</a>
                     </li>
+
                     <li class="nav-item dropdown amarelo-cor">
                         <a class="nav-link dropdown-toggle" href="escola.html" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -58,7 +60,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contato</a>
                     </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -78,20 +82,21 @@
 
               <div class="mb-3">
                 <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" minlength="6" required>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" minlength="6"
+                  required>
                 <div class="invalid-feedback">Senha inválida</div>
               </div>
 
-              <div class="mb-3">
-                <input type="checkbox" class="form-check-input" id="lembrar" name="lembrar" value="lembrar">
-                <label for="lembrar">Lembrar usuário</label>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="termos" required>
+                <label class="form-check-label" for="termos">Lembrar usuário</label>
               </div>
 
               <button type="submit" class="btn btn-primary w-100">Entrar</button>
             </form>
             <div class="d-flex justify-content-between mt-3">
-              <a href="cadastro.html">Criar uma conta</a>
-              <a href="esqueci.html">Esqueci a senha</a>
+              <a href="cadastro.html">Cadastrar</a>
+              <a href="esqueci-senha.html">Esqueci a senha</a>
             </div>
 
           </div>
@@ -120,6 +125,7 @@
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+
 </body>
 
 </html>

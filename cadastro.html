@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="img/logo-do-site.ico" type="image/x-icon">
   <title>AEB</title>
 </head>
-
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -42,6 +41,7 @@
                     <li class="nav-item verde-cor">
                         <a class="nav-link " href="noticias.html">Notícias</a>
                     </li>
+
                     <li class="nav-item dropdown amarelo-cor">
                         <a class="nav-link dropdown-toggle" href="escola.html" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -58,48 +58,73 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contato</a>
                     </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
-  <div class="container mt-5 mb-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card shadow-lg rounded-4">
-          <div class="card-body p-4">
-            <h3 class="card-title text-center mb-4">Acesso ao ambiente</h3>
+    <div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg rounded-4">
+        <div class="card-body p-4">
+          <h3 class="card-title text-center mb-4">Nova conta</h3>
 
-            <form class="needs-validation" novalidate>
-              <div class="mb-3">
-                <label for="usuario" class="form-label"></label>
-                <input type="text" class="form-control" id="usuario" placeholder="Digite seu usuário" required>
-                <div class="invalid-feedback">Usuário inválido</div>
-              </div>
-
-              <div class="mb-3">
-                <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" minlength="6" required>
-                <div class="invalid-feedback">Senha inválida</div>
-              </div>
-
-              <div class="mb-3">
-                <input type="checkbox" class="form-check-input" id="lembrar" name="lembrar" value="lembrar">
-                <label for="lembrar">Lembrar usuário</label>
-              </div>
-
-              <button type="submit" class="btn btn-primary w-100">Entrar</button>
-            </form>
-            <div class="d-flex justify-content-between mt-3">
-              <a href="cadastro.html">Criar uma conta</a>
-              <a href="esqueci.html">Esqueci a senha</a>
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Identificação de usuário</label>
+              <input type="text" class="form-control" id="nome" required>
+              <div class="invalid-feedback">Por favor, insira seu nome.</div>
             </div>
 
+            <p>A senha deve ter ao menos 8 caracteres, ao menos 1 dígito(s), ao menos 1 letra(s) minúscula(s), ao menos 1 letra(s) maiúscula(s), pelo menos 1 caractere(s) não alfa-numéricos, como *, -, ou #.</p>
+            
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="senha" placeholder="Crie uma senha" minlength="6" required>
+              <div class="invalid-feedback">A senha deve ter pelo menos 6 caracteres.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="confirmaSenha" class="form-label">Confirmar Senha</label>
+              <input type="password" class="form-control" id="confirmaSenha" placeholder="Repita a senha" required>
+              <div class="invalid-feedback">As senhas não coincidem.</div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+              <div class="invalid-feedback">E-mail inválido.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="usuario" class="form-label">Usuário</label>
+              <input type="text" class="form-control" id="usuario" placeholder="Crie um usuário" required>
+              <div class="invalid-feedback">Usuário inválido.</div>
+            </div>
+
+            
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="termos" required>
+              <label class="form-check-label" for="termos">Aceito os termos de uso</label>
+              <div class="invalid-feedback">Você precisa aceitar os termos.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+          </form>
+
+          <div class="text-center mt-3">
+            <a href="formulario_login.html">Já tenho uma conta</a>
           </div>
+
         </div>
       </div>
     </div>
   </div>
-  <footer>
+</div>
+<footer>
     <div class="footer-align">
       <div class="footer-couple">
         <h5>Programa Espacial Brasileiro</h5>
@@ -121,5 +146,4 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
-
 </html>

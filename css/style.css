@@ -4,26 +4,37 @@ body {
 }
 
 .navbar {
-  /* Transição suave do scroll */
   transition: top 0.3s;
   position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .navbar-brand:hover {
   transition: transform 0.3s ease;
   transform: scale(1.1);
-  /* Aumenta 10% */
-  ;
 }
 
 
 .bluehover:hover{
   color: rgb(5, 107, 167);
-  transition: color 0.4s ease; /* duração e suavidade */
+  transition: color 0.4s ease;
 }
 
 .textojustificado {
   text-align: justify;
+}
+
+.card a {
+  color: #000;            /* deixa preto (ou outra cor) */
+  text-decoration: none;  /* remove o sublinhado */
+}
+
+.card a:hover {
+  color: #0d6efd;         /* cor no hover (azul Bootstrap, por exemplo) */
+  text-decoration: underline; /* opcional */
 }
 
 .noticias {
@@ -50,6 +61,7 @@ body {
 .noticias .card {
   position: relative;
   max-width: 30%;
+  border: none;
 }
 
 .footer-couple {
@@ -65,7 +77,6 @@ body {
   align-items: center;
   padding: 20px;
   color: white;
-  background-color: rgba(1, 51, 124);
 }
 
 @media only screen and (max-width: 900px) {
