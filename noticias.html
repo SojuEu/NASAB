@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/logo-do-site.ico" type="image/x-icon">
+    <title>AEB - Noticias</title>
+</head>
+<style>
+    /* imagem atrás (para garantir que o degradê fique acima dela) */
+    .card .card-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+    }
+
+    /* degradê preto cobrindo a imagem, mas abaixo do texto */
+    .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    /* garante que o texto do overlay fique por cima do degradê */
+    .card .card-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        color: white;
+        /* só por segurança */
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-do-site.png" alt="Logo AEB" width="40" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item verde-cor">
+                        <a class="nav-link active" href="noticias.html">Notícias</a>
+                    </li>
+
+                    <li class="nav-item dropdown amarelo-cor">
+                        <a class="nav-link dropdown-toggle" href="escola.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Escola
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
+                            <li><a class="dropdown-item" href="noticias-escola.html">Notícias</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Inscrições</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <article>
+
+
+        <header class="p-4">
+
+            <div class="d-flex justify-content-center ">
+                <h1><b>Notícias</b></h1>
+            </div>
+            <hr style="border: 1px solid #000; width: 100%;">
+
+        </header>
+
+        <h4 class="ms-4">Mais recentes:</h4>
+        <div class="noticias pb-5">
+
+
+            <div class="card text-bg-dark">
+                <img src="./img/noticia1.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title p-3">AEB participa do World Space Business Week 2025 em Paris</h5>
+                    <p class="card-text"><small>Publicado em 19/09/2025 18h06</small></p>
+                </div>
+            </div>
+
+            <div class="card text-bg-dark">
+                <img src="./img/noticia2.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title p-3">AEB apresenta Programa Espacial Brasileiro em estande na Câmara dos
+                        Deputados</h5>
+                    <p class="card-text"><small>Publicado em 15/09/2025 10h48</small></p>
+                </div>
+            </div>
+
+            <div class="card text-bg-dark">
+                <img src="./img/noticia3.jpeg" class="card-img h-100" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title p-3">AEB marca presença na 6ª edição do SELM</h5>
+                    <p class="card-text"><small>Publicado em 01/09/2025 10h13</small></p>
+                </div>
+            </div>
+
+        </div>
+        <!-- FIM NOTICIAS -->
+        <h4 class="ms-4">Outras:</h4>
+        <hr style="border: 1px solid #000; width: 17%;">
+
+        <div class="container pt-5">
+            <div class="row pt-3">
+                <div class="col">
+                    <h3>Etapa nacional da OBSAT é realizada no CVT-E</h3>
+                    <p>A olimpíada integra teoria e prática no desenvolvimento de protótipos de satélites</p>
+                    <p>Publicado em 29/08/2025 09h25 </p>
+                </div>
+                <div class="col">
+                    <h3>AEB participa da abertura do IV Seminário de Gestão de Sensores Meteorológicos</h3>
+                    <p>Presidente da AEB, Marco Antonio Chamon, reforçou a importância dos sensores e da autonomia
+                        nacional na geração de dados ambientais</p>
+                    <p>Publicado em 20/08/2025 09h22 </p>
+                </div>
+
+            </div>
+            <div class="row pt-3">
+                <div class="col">
+                    <h3>AEB assina acordo que permite visitas escolares nas instalações do CLA</h3>
+                    <p>A assinatura da parceria entre a AEB, o DCTA, a Prefeitura de Alcântara e o CLA foi realizada
+                        nesta terça (12), no Maranhão</p>
+                    <p>Publicado em 14/08/2025 09h19 </p>
+                </div>
+                <div class="col">
+                    <h3>AEB e Philsa promovem webinário sobre a conservação marinha com tecnologias espaciais</h3>
+                    <p>Aplicações satelitais ganham protagonismo no monitoramento ambiental</p>
+                    <p>Publicado em 13/08/2025 10h10 </p>
+                </div>
+
+            </div>
+            <div class="row pt-3">
+                <div class="col">
+                    <h3>UFRN abre seleção para escolas públicas participarem do projeto Meninas no Espaço 2025</h3>
+                    <p>As inscrições estarão abertas de 11 a 22 de agosto de 2025</p>
+                    <p>Publicado em 11/08/2025 14h53</p>
+                </div>
+                <div class="col">
+                    <h3>Nota de pesar – Yosio Edemir Shimabukuro</h3>
+                    <p>Publicado em 15/08/2025 15h07 </p>
+                </div>
+            </div>
+
+        </div>
+
+         <hr style="border: 1px solid #000; width: 100%;">
+
+
+    </article>
+
+
+    </header>
+    <footer>
+
+        <div class="footer-align">
+            <div class="footer-couple">
+                <h5>Programa Espacial Brasileiro</h5>
+                <p><a href="https://www.gov.br/aeb/pt-br/programa-espacial-brasileiro/linha-do-tempo"
+                        class="link-light">Linha do tempo</a></p>
+                <p><a href="https://www.gov.br/aeb/pt-br/programa-espacial-brasileiro/programa-nacional-de-atividades-espaciais"
+                        class="link-light">PNAE</a></p>
+                <p><a href="https://www.gov.br/aeb/pt-br/programa-espacial-brasileiro/linha-do-tempo"
+                        class="link-light">Linha do tempo</a></p>
+                <p><a href="https://www.gov.br/aeb/pt-br/programa-espacial-brasileiro/linha-do-tempo"
+                        class="link-light">Linha do tempo</a></p>
+                <p><a href="https://www.gov.br/aeb/pt-br/programa-espacial-brasileiro/linha-do-tempo"
+                        class="link-light">Linha do tempo</a></p>
+            </div>
+            <div class="footer-couple">
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <!-- Java scrip links -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

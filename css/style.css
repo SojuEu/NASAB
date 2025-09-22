@@ -1,66 +1,84 @@
 body {
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
+
 }
 
 .navbar {
   /* Transição suave do scroll */
-    transition: top 0.3s;
-    position: sticky;
+  transition: top 0.3s;
+  position: sticky;
 }
 
-.navbar-brand:hover{
- transition: transform 0.3s ease;
- transform:  scale(1.1); /* Aumenta 10% */;
-}
-.nav-item:hover{
-  .nav-link{
-  color: white;
-  }
-  background-color: rgba(1, 51, 124, 0.9);
-  border-radius: 30px;
+.navbar-brand:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  /* Aumenta 10% */
+  ;
 }
 
-.verde-cor:hover{
-  background-color: rgba(3, 105, 31, 0.8);
-  color: white;
-}
 
-.amarelo-cor:hover{
-  background-color: rgba(255, 223, 0, 0.8);
-  color: black;
-  .nav-link{
-  color: rgb(0, 0, 0);
-  }
-}
 
-.dropdown-item:hover{
-  background-color: rgba(255, 223, 0, 0.8);
-  color: white;
-}
 
-header{
-  display: flex;
- 
-  justify-content:end;
-  width: 100%;
-  color: white;
-  flex-direction: column;
-  background-color: rgba(1, 51, 124);
-}
-
-.textojustificado{
-  font-size: 1.1rem;
+.textojustificado {
   text-align: justify;
 }
 
-footer{
-  background-color: red;
+.noticias {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1%;
+  margin-top: 3%;
+  margin-bottom: 1%;
 }
 
-@media only screen and (max-width: 800px) {
-  header{
-    flex-direction: column;
+.escola-aviso {
+  margin-top: 4%;
+  display: flex;
+  padding: 3%;
+  justify-content: center;
+  width: 50%;
+  color: white;
+  flex-direction: column;
+}
 
+.noticias .card {
+  position: relative;
+  max-width: 30%;
+}
+
+.footer-couple {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: rgba(1, 51, 124);
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+
+  .noticias {
+    flex-direction: column;
+    height: auto;
+    background-color: rgba(240, 240, 240, 0.8);
+    gap: 20px;
+
+  }
+
+  .noticias .card {
+    max-width: 87%;
   }
 }
