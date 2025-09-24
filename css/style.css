@@ -23,6 +23,16 @@ body {
   transition: color 0.4s ease;
 }
 
+h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.bluehover2:hover{
+  color: rgb(29, 148, 218);
+  transition: color 0.4s ease;
+}
+
 .textojustificado {
   text-align: justify;
 }
@@ -48,6 +58,34 @@ body {
   margin-bottom: 1%;
 }
 
+section{
+  background-color: rgba(114, 56, 56, 0.8);
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-wrap: wrap;
+  padding: 14%;
+  gap: 5px;
+}
+
+figure {
+  text-align: center; /* centraliza a imagem e legenda */
+}
+
+figcaption {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.abcd{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .escola-aviso {
   margin-top: 4%;
   display: flex;
