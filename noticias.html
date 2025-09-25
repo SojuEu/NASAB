@@ -10,7 +10,10 @@
     <title>AEB - Noticias</title>
 </head>
 <style>
-    /* imagem atrás (para garantir que o degradê fique acima dela) */
+
+    header{
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     .card .card-img {
         display: block;
         width: 100%;
@@ -20,7 +23,6 @@
         z-index: 0;
     }
 
-    /* degradê preto cobrindo a imagem, mas abaixo do texto */
     .card::before {
         content: "";
         position: absolute;
@@ -30,7 +32,6 @@
         pointer-events: none;
     }
 
-    /* garante que o texto do overlay fique por cima do degradê */
     .card .card-img-overlay {
         position: absolute;
         top: 0;
@@ -39,7 +40,6 @@
         bottom: 0;
         z-index: 2;
         color: white;
-        /* só por segurança */
     }
 </style>
 
@@ -91,7 +91,7 @@
 
         <header class="p-4">
 
-            <div class="d-flex justify-content-center ">
+            <div class="d-flex justify-content-center">
                 <h1><b>Notícias</b></h1>
             </div>
             <hr style="border: 1px solid #000; width: 100%;">

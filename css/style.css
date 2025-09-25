@@ -17,8 +17,11 @@ body {
   transform: scale(1.1);
 }
 
+.bluehover{
+  text-decoration: none;
+}
 
-.bluehover:hover{
+.bluehover:hover {
   color: rgb(5, 107, 167);
   transition: color 0.4s ease;
 }
@@ -28,7 +31,7 @@ h3 a {
   color: black;
 }
 
-.bluehover2:hover{
+.bluehover2:hover {
   color: rgb(29, 148, 218);
   transition: color 0.4s ease;
 }
@@ -38,13 +41,8 @@ h3 a {
 }
 
 .card a {
-  color: #000;            /* deixa preto (ou outra cor) */
-  text-decoration: none;  /* remove o sublinhado */
-}
-
-.card a:hover {
-  color: #0d6efd;         /* cor no hover (azul Bootstrap, por exemplo) */
-  text-decoration: underline; /* opcional */
+  color: #000;
+  text-decoration: none;
 }
 
 .noticias {
@@ -58,21 +56,32 @@ h3 a {
   margin-bottom: 1%;
 }
 
-section{
-  background-color: rgba(114, 56, 56, 0.8);
+section {
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: large;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   text-align: justify;
   text-wrap: wrap;
-  padding: 14%;
-  gap: 5px;
+}
+
+aside {
+  padding: 3%;
+  width: 30%;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(1,29,62);
+}
+
+main {
+  padding: 10%;
+  background-color: pink;
+  width: 70%;
 }
 
 figure {
-  text-align: center; /* centraliza a imagem e legenda */
+  text-align: center;
+  /* centraliza a imagem e legenda */
 }
 
 figcaption {
@@ -80,12 +89,13 @@ figcaption {
   margin-top: 5px;
 }
 
-.abcd{
+.abcd {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .escola-aviso {
   margin-top: 4%;
   display: flex;
@@ -121,13 +131,16 @@ figcaption {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 44px;
   text-align: center;
-  color: #222;  /* deixar escuro pra aparecer no fundo claro */
+  color: #222;
+  /* deixar escuro pra aparecer no fundo claro */
   margin-bottom: 0.25rem;
 }
+
 #gBigNews .separador {
   width: 120px;
   height: 6px;
-  background: #123e76; /* azul AEB */
+  background: #123e76;
+  /* azul AEB */
   margin: 0.6rem auto 1.8rem auto;
   border-radius: 4px;
 }
@@ -138,9 +151,11 @@ figcaption {
   object-fit: cover;
   border-radius: 6px;
 }
+
 .slide-text {
   padding-left: 2rem;
 }
+
 .slide-cta {
   background: #0b3d6b;
   color: #fff;
@@ -150,22 +165,33 @@ figcaption {
   margin-top: 1rem;
   text-decoration: none;
 }
+
 .slide-cta:hover {
   background: #062848;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   width: 50px;
   height: 50px;
-  top: 50%;  /* centraliza verticalmente */
+  top: 50%;
+  /* centraliza verticalmente */
   transform: translateY(-50%);
   background: #fff;
   border-radius: 50%;
-  border: 2px solid rgba(0,0,0,0.15);
+  border: 2px solid rgba(0, 0, 0, 0.15);
   opacity: 1;
 }
-.carousel-control-prev { left: -60px; }   /* joga pra fora */
-.carousel-control-next { right: -60px; }
+
+.carousel-control-prev {
+  left: -60px;
+}
+
+/* joga pra fora */
+.carousel-control-next {
+  right: -60px;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-size: 18px 18px;
@@ -177,7 +203,8 @@ figcaption {
     flex-direction: column;
   }
 
-  .noticias {
+  .noticias,
+  section {
     flex-direction: column;
     height: auto;
     background-color: rgba(240, 240, 240, 0.8);
@@ -189,8 +216,14 @@ figcaption {
     max-width: 87%;
   }
 
-  .slide-text { 
+  .slide-text {
     padding-left: 0;
     margin-top: 1rem;
+  }
+
+  .abcd {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10%;
   }
 }
