@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/logo-do-site.ico" type="image/x-icon">
+    <title>Página Inicial - Agência Espacial Brasileira</title>
+</head>
+<style>
+    header {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+            url('img/fundomaneiro.webp');
+        height: 70vh;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        color: white;
+        flex-direction: column;
+
+    }
+
+
+    footer {
+        background-image: url('img/footer.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-do-site.png" alt="Logo AEB" width="40" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item verde-cor">
+                        <a class="nav-link " href="noticias.html">Notícias</a>
+                    </li>
+
+                    <li class="nav-item dropdown amarelo-cor">
+                        <a class="nav-link dropdown-toggle" href="escola.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Escola
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="formulario_login.html">Inscrições</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="#">Quem Somos</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <article>
+        <section id="quem-somos" class="py-5"
+            style="background: linear-gradient(135deg, rgb(1,29,62) 50%, #124da5 100%); color: #fff;">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-5 text-warning">Quem Somos</h2>
+                    <p class="lead">
+                        A <strong>Agência Espacial Brasileira (AEB)</strong> lidera o Programa Espacial Brasileiro,
+                        promovendo ciência, tecnologia e inovação em benefício da sociedade.
+                    </p>
+                </div>
+
+                <div class="row align-items-center mb-5">
+
+                    <div class="col-lg-7">
+                        <p class="mb-3">
+                            Fundada em <strong>1994</strong>, a AEB é uma autarquia vinculada ao <strong>Ministério da
+                                Ciência, Tecnologia e Inovação (MCTI)</strong>. Sua missão é <em>promover o
+                                desenvolvimento das atividades espaciais de interesse nacional</em>.
+                        </p>
+                        <p class="mb-3">
+                            Atua na coordenação de políticas públicas, no apoio à pesquisa científica e tecnológica e na
+                            cooperação internacional. Também incentiva a formação de novos talentos através de programas
+                            educacionais como o <strong>AEB Escola</strong>.
+                        </p>
+                        <a href="https://www.gov.br/aeb/pt-br/acesso-a-informacao/institucional/aeb" target="_blank"
+                            class="btn btn-warning fw-bold shadow-lg mt-3">
+                            Conheça Mais
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                        <img src="./img/logo-do-site.png" alt="Logo da AEB" class="img-fluid rounded shadow-lg p-3">
+                    </div>
+                </div>
+
+                <section id="contato" class="py-5">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold display-5" style="color: rgb(1,29,62);">Fale Conosco</h2>
+                            <p class="lead">Entre em contato com a Agência Espacial Brasileira (AEB) por nossos canais
+                                oficiais.</p>
+                        </div>
+
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-telephone-fill fs-1 text-primary mb-3"></i>
+                                        <h5 class="fw-bold" style="color: rgb(1,29,62);">Telefone</h5>
+                                        <p class="mb-1">(61) 2033-4000</p>
+                                        <p class="mb-1">(61) 2033-4500 <span class="small text-muted">(Ouvidoria)</span>
+                                        </p>
+                                        <p class="mb-0">(61) 2033-4223 <span class="small text-muted">(Comissão de
+                                                Ética)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-envelope-fill fs-1 text-warning mb-3"></i>
+                                        <h5 class="fw-bold" style="color: rgb(1,29,62);">E-mail</h5>
+                                        <p class="mb-1">ari@aeb.gov.br</p>
+                                        <p class="mb-1">ouvidoria@aeb.gov.br</p>
+                                        <p class="mb-0">sic@aeb.gov.br</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-geo-alt-fill fs-1 text-success mb-3"></i>
+                                        <h5 class="fw-bold" style="color: rgb(1,29,62);">Endereço</h5>
+                                        <p class="mb-1">Edifício SEDE/DF</p>
+                                        <p class="mb-1">Setor Policial Sul – Área 5</p>
+                                        <p class="mb-0">Quadra 3, Blocos A e F – Asa Sul<br>Brasília/DF – CEP 70610-200
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-5">
+                        <div class="text-center mb-4">
+                            <h3 class="fw-bold" style="color: rgb(255, 255, 255);">Unidades Regionais</h3>
+                            <p class="lead">Confira nossos escritórios espalhados pelo Brasil</p>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-2" style="color: rgb(1,29,62);">São José dos Campos/SP
+                                        </h5>
+                                        <p class="mb-1">Av. Dr. Altino Bondensan, 500<br>Parque de Inovação Tecnológica
+                                        </p>
+                                        <p class="mb-1">Tel: (12) 3876-7715</p>
+                                        <p class="mb-0">Email: ursjc@aeb.gov.br</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-2" style="color: rgb(1,29,62);">Natal/RN</h5>
+                                        <p class="mb-1">Av. Campos Sales, 901 – Petrópolis</p>
+                                        <p class="mb-1">Tel: (61) 9513-2500</p>
+                                        <p class="mb-0">Email: urrn@aeb.gov.br</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-2" style="color: rgb(1,29,62);">Alcântara/MA</h5>
+                                        <p class="mb-1">Centro de Lançamento de Alcântara</p>
+                                        <p class="mb-1">Rua Mercês, 464 – Centro</p>
+                                        <p class="mb-1">Tel: (98) 3377-1515</p>
+                                        <p class="mb-0">Email: urma@aeb.gov.br</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-2" style="color: rgb(1,29,62);">Parnamirim/RN</h5>
+                                        <p class="mb-1">Centro Vocacional Tecnológico Espacial</p>
+                                        <p class="mb-1">Rodovia RN 063 – Km 11</p>
+                                        <p class="mb-1">Tel: (84) 3216-1379</p>
+                                        <p class="mb-0">Email: urrn@aeb.gov.br</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="localizacao" class="py-5">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold display-5 text-warning">Localização</h2>
+                            <p class="lead">Confira a localização da sede da AEB no Brasil.</p>
+                        </div>
+
+                        <div class="row g-4">
+
+                            <div class="col-lg-8">
+                                <div class="ratio ratio-16x9 shadow rounded">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.411116720178!2d-47.882881684760684!3d-15.793049689012394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3c7a73b5b5bb%3A0xa8f1e8e5367a1d0a!2sAg%C3%AAncia%20Espacial%20Brasileira!5e0!3m2!1spt-BR!2sbr!4v1695640000000!5m2!1spt-BR!2sbr"
+                                        style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4">
+                                <div class="card h-100 shadow-sm border-0 rounded-4">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold mb-3" style="color: rgb(1,29,62);">Sede da AEB</h5>
+                                        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Edifício SEDE/DF, Setor
+                                            Policial Sul – Área 5</p>
+                                        <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>(61) 2033-4000</p>
+                                        <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>ari@aeb.gov.br</p>
+                                        <p class="mb-0"><i class="bi bi-globe me-2"></i><a href="https://www.gov.br/aeb"
+                                                target="_blank">www.gov.br/aeb</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+    </article>
+    </header>
+
+    <footer class="pt-5" >
+        <div class="container">
+            <div class="row g-4 d-flex align-items-center justify-content-center">
+
+                <!-- Sobre / Logo -->
+                <div class="col-md-4">
+
+                    <p class="mt-3">
+                        A Agência Espacial Brasileira (AEB) lidera o Programa Espacial Nacional, promovendo ciência,
+                        tecnologia e inovação para o desenvolvimento do Brasil.
+                    </p>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold mb-3">Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="noticias.html" class="text-white text-decoration-none">Notícias</a></li>
+                        <li><a href="quemsomos.html" class="text-white text-decoration-none">Quem Somos</a></li>
+                        <li><a href="https://www.gov.br/aeb" target="_blank"
+                                class="text-white text-decoration-none">Site Oficial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>(61) 2033-4000</p>
+                    <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>ari@aeb.gov.br</p>
+                    <p class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Brasília/DF – SE Sul, Área 5</p>
+                </div>
+
+                <img src="./img/logo-do-site.png" alt="Logo AEB" style="width:200px;">
+            </div>
+
+            <hr class="my-4 border-light">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <small>© 2025 Agência Espacial Brasileira – Todos os direitos reservados</small>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
