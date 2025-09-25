@@ -1,22 +1,53 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = '-80px';
+  }
+  else {
+    navbar.style.top = '0';
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
 (() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
+  'use strict';
+  const forms = document.querySelectorAll('.needs-validation');
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
       if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
+        event.preventDefault();
+        event.stopPropagation();
       }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
 
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
+// Bloquear perguntas 9 a 13 caso resposta da 8 seja "Não"
+const radiosTrabalho = document.querySelectorAll('input[name="ja_trabalhou"]');
+const blocoTrabalho = document.getElementById('bloco-trabalho');
+
+radiosTrabalho.forEach(radio => {
+  radio.addEventListener('change', function () {
+    if (this.value === "Não") {
+      blocoTrabalho.querySelectorAll('input').forEach(input => {
+        input.disabled = true;
+        input.required = false;
+        input.checked = false;
+      });
+    } else {
+      blocoTrabalho.querySelectorAll('input').forEach(input => {
+        input.disabled = false;
+        input.required = true;
+      });
+    }
+  });
+});
 
 const senha = document.getElementById("senha");
 const confirmaSenha = document.getElementById("confirmaSenha");
@@ -72,22 +103,6 @@ document.getElementById('cpfForm').addEventListener('submit', function (e) {
     alert('CPF inválido. Verifique o número digitado.');
     document.getElementById('cpf').focus(); // Foca no campo de CPF após o erro
   }
-});
-
-let lastScrollTop = 0;
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollTop > lastScrollTop) {
-    navbar.style.top = '-80px';
-  }
-  else {
-    navbar.style.top = '0';
-  }
-
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
 // const scrollSpeed = 100;

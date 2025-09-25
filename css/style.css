@@ -3,6 +3,26 @@ body {
 
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;    /* organiza em coluna */
+}
+
+body > .container {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+}
+
+legend{
+  font-size:large;
+}
+
 .navbar {
   transition: top 0.3s;
   position: sticky;
