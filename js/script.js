@@ -28,7 +28,6 @@ window.addEventListener('scroll', () => {
   });
 })();
 
-// Bloquear perguntas 9 a 13 caso resposta da 8 seja "Não"
 const radiosTrabalho = document.querySelectorAll('input[name="ja_trabalhou"]');
 const blocoTrabalho = document.getElementById('bloco-trabalho');
 
@@ -49,8 +48,8 @@ radiosTrabalho.forEach(radio => {
   });
 });
 
-const senha = document.getElementById("senha");
-const confirmaSenha = document.getElementById("confirmaSenha");
+const senha = document.getElementById("snh");
+const confirmaSenha = document.getElementById("snhcon");
 
 function validarSenha() {
   if (confirmaSenha.value !== senha.value) {
@@ -64,11 +63,11 @@ senha.addEventListener("input", validarSenha);
 confirmaSenha.addEventListener("input", validarSenha);
 document.getElementById('cpf').addEventListener('input', function(e) {
   var value = e.target.value;
-  var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
-						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
-						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
-						.replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
-						.replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
+  var cpfPattern = value.replace(/\D/g, '')
+						.replace(/(\d{3})(\d)/, '$1.$2')
+						.replace(/(\d{3})(\d)/, '$1.$2')
+						.replace(/(\d{3})(\d)/, '$1-$2')
+						.replace(/(-\d{2})\d+?$/, '$1');
   e.target.value = cpfPattern;
 });
 function validaCPF(cpf) {
@@ -77,7 +76,7 @@ function validaCPF(cpf) {
 
   let soma = 0;
   let resto;
-  if (/^(\d)\1{10}$/.test(cpf)) return false; // Verifica sequências iguais
+  if (/^(\d)\1{10}$/.test(cpf)) return false;
 
   for (let i = 1; i <= 9; i++) soma += parseInt(cpf.substring(i-1, i)) * (11 - i);
   resto = (soma * 10) % 11;
@@ -96,9 +95,7 @@ function validaCPF(cpf) {
 document.getElementById('cpfForm').addEventListener('submit', function(e) {
   var cpf = document.getElementById('cpf').value;
   if (!validaCPF(cpf)) {
-	e.preventDefault(); // Impede o envio do formulário
-	alert('CPF inválido. Verifique o número digitado.');
-	document.getElementById('cpf').focus(); // Foca no campo de CPF após o erro
+    e.preventDefault();
   }
 });
 // const scrollSpeed = 100;
@@ -132,7 +129,6 @@ document.getElementById('cpfForm').addEventListener('submit', function(e) {
 //     }
 //   }
 
-//HORÁRIO E DATA
 function atualizarDataHora() {
   const agora = new Date();
 

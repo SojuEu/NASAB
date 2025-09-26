@@ -69,7 +69,7 @@
           <div class="card-body p-4">
             <h3 class="card-title text-center mb-4">Nova conta</h3>
 
-            <form action="dados.html" method="get" enctype="multipart/form-data" class="needs-validation" novalidate>
+            <form id="cpfForm" action="dados.html" method="get" enctype="multipart/form-data" class="needs-validation" novalidate>
               <div class="mb-4">
                 <label for="usr" class="form-label">Identificação de usuário</label>
                 <input type="text" name="usuario" class="form-control" id="usr" placeholder="Digite seu usuário"
@@ -376,10 +376,13 @@
                 </select>
                 <div class="invalid-feedback">Selecione um pais válido</div>
               </div>
-              <div class="mb-4">
+
+             <div class="mb-4">
                 <label for="cpf" class="form-label">CPF</label>
                 <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" name="cpf" required>
+                <div class="invalid-feedback">CPF inválido</div>
               </div>
+
               <div class="mb-4">
                 <label name="escolaridade" id="nvesc" class="form-label" for="nvesc">Nível de
                   Escolaridade</label>
@@ -407,7 +410,7 @@
                 <div class="invalid-feedback">Você precisa aceitar os termos de política do site</div>
               </div>
               <div class="mb-3">
-                <a href="politica_site.html">Link para o acordo de política do site</a>
+                <a href="https://aebescolavirtual.aeb.gov.br/documentos/politica_de_privacidade.html">Link para o acordo de política do site</a>
               </div>
               <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
             </form>
