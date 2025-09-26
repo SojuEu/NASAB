@@ -3,14 +3,16 @@ body {
 
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
-  flex-direction: column;    /* organiza em coluna */
+  flex-direction: column;
+  /* organiza em coluna */
 }
 
-body > .container {
+body>.container {
   flex: 1;
 }
 
@@ -19,8 +21,8 @@ footer {
   padding: 20px;
 }
 
-legend{
-  font-size:large;
+legend {
+  font-size: large;
 }
 
 .navbar {
@@ -37,7 +39,7 @@ legend{
   transform: scale(1.1);
 }
 
-.bluehover{
+.bluehover {
   color: white;
   text-decoration: none;
 }
@@ -47,10 +49,11 @@ legend{
   transition: color 0.4s ease;
 }
 
-.bluehover2{
+.bluehover2 {
   color: black;
   text-decoration: none;
 }
+
 .bluehover2:hover {
   color: rgb(29, 148, 218);
   transition: color 0.4s ease;
@@ -76,7 +79,7 @@ legend{
   margin-bottom: 1%;
 }
 
-section{
+section {
   font-size: large;
   display: flex;
   flex-direction: row;
@@ -89,8 +92,8 @@ aside {
   width: 30%;
   gap: 10px;
   color: white;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgb(1,29,62);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(1, 29, 62);
 }
 
 main {
@@ -132,7 +135,11 @@ figcaption {
   border: none;
 }
 
-footer{
+footer {
+  background-image: url('img/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
   padding: 2%;
   display: flex;
   justify-content: center;
@@ -214,11 +221,13 @@ footer{
     flex-direction: column;
   }
 
-  aside, main{
+  aside,
+  main {
     width: 100%;
   }
 
-  .noticias, section {
+  .noticias,
+  section {
     flex-direction: column;
     height: auto;
     gap: 20px;
