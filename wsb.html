@@ -26,6 +26,14 @@
         flex-direction: column;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
+
+    footer {
+        background-image: url('img/footer.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
 </style>
 
 <body>
@@ -48,12 +56,11 @@
                         <a class="nav-link active" href="noticias.html">Notícias</a>
                     </li>
 
-                    <li class="nav-item dropdown amarelo-cor">
+                   <li class="nav-item dropdown amarelo-cor">
                         <a class="nav-link dropdown-toggle" href="escola.html" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Escola
-                        </a>
+                            aria-expanded="false">Escola</a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="escola.html">Escola</a></li>
                             <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -61,8 +68,8 @@
                             <li><a class="dropdown-item" href="formulario_login.html">Inscrições</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                     <li class="nav-item">
+                        <a class="nav-link" href="quemsomos.html">Quem Somos</a>
                     </li>
 
                 </ul>
@@ -184,8 +191,52 @@
 
 
     </header>
-    <footer>
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row g-4 d-flex align-items-center justify-content-center">
 
+                <!-- Sobre / Logo -->
+                <div class="col-md-4">
+
+                    <p class="mt-3">
+                        A Agência Espacial Brasileira (AEB) lidera o Programa Espacial Nacional, promovendo ciência,
+                        tecnologia e inovação para o desenvolvimento do Brasil.
+                    </p>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold mb-3">Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="noticias.html" class="text-white text-decoration-none">Notícias</a></li>
+                        <li><a href="quemsomos.html" class="text-white text-decoration-none">Quem Somos</a></li>
+                        <li><a href="https://www.gov.br/aeb" target="_blank"
+                                class="text-white text-decoration-none">Site Oficial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>(61) 2033-4000</p>
+                    <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>ari@aeb.gov.br</p>
+                    <p class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Brasília/DF – SE Sul, Área 5</p>
+                </div>
+
+                <img src="./img/logo-do-site.png" alt="Logo AEB" style="width:200px;">
+            </div>
+
+            <hr class="my-4 border-light">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <small>© 2025 Agência Espacial Brasileira – Todos os direitos reservados</small>
+                </div>
+            </div>
+
+
+        </div>
     </footer>
 
     <!-- Java scrip links -->
