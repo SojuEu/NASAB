@@ -20,12 +20,11 @@
         width: 100%;
         display: flex;
         justify-content: end;
-        width: 100%;
         color: white;
         flex-direction: column;
 
     }
-    
+
 
     /* imagem atrás (para garantir que o degradê fique acima dela) */
     .card .card-img {
@@ -74,6 +73,21 @@
         background-repeat: no-repeat;
         color: white;
     }
+
+    .imagemdia{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.9), rgba(0, 0, 0, 0)),
+            url('img/imagem-do-dia.jpg');
+        height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        padding: 5%;
+        margin-top: 5%;
+        justify-content: start;
+        width: 100%;
+        color: white;
+        flex-direction: column;
+    }
 </style>
 
 <body>
@@ -94,8 +108,8 @@
                         <a class="nav-link" href="noticias.html">Notícias</a>
                     </li>
                     <li class="nav-item dropdown amarelo-cor">
-                        <a class="nav-link dropdown-toggle" href="escola.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Escola</a>
+                        <a class="nav-link dropdown-toggle" href="escola.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Escola</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="escola.html">Escola</a></li>
                             <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
@@ -133,36 +147,55 @@
             </p>
             </div>
         </header>
-        <div>
-            <h1 class="m-5 mb-0"><b>Últimas Notícias</b></h1>
-            <hr style="border: 1px solid #000; width: 50%;">
-            <div id="data-hora" class="ps-5"></div>
+        <div class="d-flex flex-column align-items-center p-4" style="background-color: rgba(255, 255, 255, 0.8);">
+            <div>
+                <h1 class="m-5 mb-0"><b>Últimas Notícias</b></h1>
+                <hr style="border: 1px solid #000; width: 95%;">
+                <div id="data-hora" class="ps-5"></div>
+            </div>
+            <div class="noticias">
+                <div class="card text-bg-dark">
+                    <img src="./img/noticia1.jpeg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title p-3 bluehover">AEB participa do World Space Business Week 2025 em Paris
+                        </h5>
+                        <p class="card-text"><small>Publicado em 19/09/2025 18h06</small></p>
+                    </div>
+                </div>
+                <div class="card text-bg-dark">
+                    <img src="./img/noticia2.jpeg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title p-3 bluehover">AEB apresenta Programa Espacial Brasileiro em estande na
+                            Câmara
+                            dos Deputados</h5>
+                        <p class="card-text"><small>Publicado em 15/09/2025 10h48</small></p>
+                    </div>
+                </div>
+                <div class="card text-bg-dark">
+                    <img src="./img/noticia3.jpeg" class="card-img h-100" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title p-3 bluehover">AEB marca presença na 6ª edição do SELM</h5>
+                        <p class="card-text"><small>Publicado em 01/09/2025 10h13</small></p>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-outline-dark d-flex justify-content-center mt-3" href="noticias.html" role="button"
+                style="max-width: 300px;">Ver mais</a>
+            <!-- FIM NOTICIAS -->
         </div>
-        <div class="noticias">
-            <div class="card text-bg-dark">
-                <img src="./img/noticia1.jpeg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title p-3 bluehover">AEB participa do World Space Business Week 2025 em Paris</h5>
-                    <p class="card-text"><small>Publicado em 19/09/2025 18h06</small></p>
-                </div>
-            </div>
-            <div class="card text-bg-dark">
-                <img src="./img/noticia2.jpeg" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title p-3 bluehover">AEB apresenta Programa Espacial Brasileiro em estande na Câmara
-                        dos Deputados</h5>
-                    <p class="card-text"><small>Publicado em 15/09/2025 10h48</small></p>
-                </div>
-            </div>
-            <div class="card text-bg-dark">
-                <img src="./img/noticia3.jpeg" class="card-img h-100" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title p-3 bluehover">AEB marca presença na 6ª edição do SELM</h5>
-                    <p class="card-text"><small>Publicado em 01/09/2025 10h13</small></p>
-                </div>
+        <div class="imagemdia">
+            <div>
+                <h2 style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 27px; color: rgb(241, 227, 25);">IMAGEM DO DIA</h2>
+                <p class="p-5">A astronauta da NASA Zena Cardman processa amostras de células ósseas dentro do porta-luvas de
+                    ciências da vida do módulo de laboratório Kibo em 28 de agosto de 2025, como parte de um experimento
+                    que testa como a microgravidade afeta as células de formação e degradação óssea e explora possíveis
+                    maneiras de prevenir a perda óssea. Esta pesquisa pode ajudar a proteger os astronautas em futuras
+                    missões de longa duração à Lua e a Marte, ao mesmo tempo em que avança nos tratamentos para milhões
+                    de pessoas na Terra que sofrem de osteoporose.</p>
             </div>
         </div>
-        <!-- FIM NOTICIAS -->
+
+
         <div class="escola-aviso" style="width: 100%;">
             <h4 style="font-size: 120%;">AEB ESCOLA VIRTUAL</h4>
             <p class="textojustificado">
@@ -183,9 +216,52 @@
         </div>
     </article>
     </header>
-    <footer>
-        <p>Todos os direitos reservados a Agência Espacial Brasileira &copy;</p>
-        
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row g-4 d-flex align-items-center justify-content-center">
+
+                <!-- Sobre / Logo -->
+                <div class="col-md-4">
+
+                    <p class="mt-3">
+                        A Agência Espacial Brasileira (AEB) lidera o Programa Espacial Nacional, promovendo ciência,
+                        tecnologia e inovação para o desenvolvimento do Brasil.
+                    </p>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold mb-3">Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="noticias.html" class="text-white text-decoration-none">Notícias</a></li>
+                        <li><a href="quemsomos.html" class="text-white text-decoration-none">Quem Somos</a></li>
+                        <li><a href="https://www.gov.br/aeb" target="_blank"
+                                class="text-white text-decoration-none">Site Oficial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>(61) 2033-4000</p>
+                    <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>ari@aeb.gov.br</p>
+                    <p class="mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Brasília/DF – SE Sul, Área 5</p>
+                </div>
+
+                <img src="./img/logo-do-site.png" alt="Logo AEB" style="width:200px;">
+            </div>
+
+            <hr class="my-4 border-light">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <small>© 2025 Agência Espacial Brasileira – Todos os direitos reservados</small>
+                </div>
+            </div>
+
+
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
